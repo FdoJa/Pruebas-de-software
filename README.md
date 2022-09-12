@@ -3,7 +3,7 @@
 
 * Descripción: Proyecto cumple con la especificación de utilizar colas para realizar la busqueda de los textos, en este caso realizado en python.
 
-* Instalación: Solo corresponde al programa enviado.
+* Instalación: Código en python el cual debe ser ejecutado, preferiblemente en alguna carpeta dado que se crea un archivo de texto con los logs en la misma ubicación que el programa.
 
 * Cómo usar: 
   * Se debe correr el programa. Al iniciar, en la consola se le especificar al usuario las cosas que puede realizar, en este caso corresponde
@@ -18,4 +18,4 @@
     que se guardan, por lo que se podría realizar una mejor información en este último. 
   * La forma de busqueda por indice puede no ser muy útil dado que puede no encontrar el texto que busca tan facilmente, por lo que quizás se podría idear otro metodo de busqueda.
 
-* Licencia:
+* Licencia: None
