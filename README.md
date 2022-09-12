@@ -1,7 +1,12 @@
 # Tarea 1 - Validación y Verificación
 * **Nombre**: Fernando Delgado - Rol: 201804571-3
 
-* **Descripción**: Proyecto cumple con la especificación de utilizar colas para realizar la busqueda de los textos, en este caso realizado en python.
+* **Descripción**: Proyecto cumple con la especificación de utilizar colas para realizar la busqueda de los textos, en este caso realizado en python. Permite al usuario utilizar las siguientes funciones:
+  * Agregar texto a la pila
+  * Ver cual es el texto más largo y el más corto
+  * Imprimir en pantalla algún texto
+  * Comparar los tamaños de dos textos
+
 
 * **Instalación**: Código en python el cual debe ser ejecutado, preferiblemente en alguna carpeta dado que se crea un archivo de texto con los logs en la misma ubicación que el programa.
 
