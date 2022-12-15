@@ -1,26 +1,29 @@
-# Tarea 1 - Validación y Verificación
+Tarea módulo de registro biblioteca
 * **Nombre**: Fernando Delgado - Rol: 201804571-3
 
-* **Descripción**: Proyecto cumple con la especificación de utilizar colas para realizar la busqueda de los textos, en este caso realizado en python. Permite al usuario utilizar las siguientes funciones:
-  * Agregar texto a la pila
-  * Ver cual es el texto más largo y el más corto
-  * Imprimir en pantalla algún texto
-  * Comparar los tamaños de dos textos
+* **Descripción**: Proyecto para el guardado de información sobre libros, para ello es posible guardar los datos acerca de su: Título, autor, fecha edición, número de paginas, editorial, genero, ISBN ((International Standard Book Number), ubicación (piso de biblioteca, número de pasillo, estante, posición (x,y)), estado (Prestado, disponible, extraviado), descripción.
 
+Para ello se utiliza un archivo Regex que permite validar las entradas, donde se tienen distintas opciones para ciertos parametros:
+  * Parametro tipo texto (Titulo, autor, editorial, genero, ubicación, descripción): Solamente se pueden utilizar caracteres (Letras mayusculas o minusculas desde la a-z), números y espacios. Destacando que no se puede realizar una entrada en blanco tipo " ".
+  * Parametro tipo "Fecha": Para la fecha de edición, se elige el formato de fecha DD/MM/AAAA, o de otra forma DD/MM/AA.
+  * Parametro tipo "Paginas": Solo son aceptables numeros.
+  * Parametro tipo "Codigo": Para el ISBN del libro, se elige el formato de 13 digitos. Por lo cual es obligatorio colocar una entrada de exactamente esa cantidad de digitos.
+  * Parametro tipo "Estado": Se define que solamente existen las opciones posibles a colocar de -> prestado, disponible, extraviado. Cualquier otra sera rechazada.
 
-* **Instalación**: Código en python el cual debe ser ejecutado, preferiblemente en alguna carpeta dado que se crea un archivo de texto con los logs en la misma ubicación que el programa.
+El proyecto ofrece ciertas funciones para su manejo por el usuario, siendo estas las siguientes:
+  * Agregar/registrar un libro
+  * Buscar un libro por su titulo, autor o ISBN.
+  * Editar un libro
+  * Eliminar un registre de un libro
+  * Cambiar el estado de un libro
+
+* **Instalación**: Código en JAVA el cual debe ser ejecutado, abrir en un IDLE (Preferentemente Eclipse dado que se desarrolla en este) y ejecutar "Main.java" para acceder a la terminal y utilizar el programa. En caso de querer verificar los casos de prueba ejecutar archivo "bibliotecaTest.java".
 
 * **Cómo usar**: 
-  * Se debe correr el programa. Al iniciar, en la consola se le especificar al usuario las cosas que puede realizar, en este caso corresponde
-    a añadir textos a la pila, ver el más largo y el más corto almacenados, imprimir algún texto, comparar tamaños de textos, y salir del programa.
-  * Cabe destacar que fue realizado con la base de que el usuario cuando requiera utilizar un texto especifico, se le pedira el texto según el
-    el orden que fue ingresado al sistema. Por ejemplo: Al ingresar los textos -> (Hola, como, estas); si quisiera buscar el texto "como", debe utilizar
-    la interfaz hasta que el programa le pida el indice, donde el usuario debe ingresar el número 2 para obtener este texto.
-  * En cuanto a los logs que se crean, estos son guardados en un archivo de texto que se encontrara en la carpeta donde se encuentre el programa guardado.
+  * Se debe correr el programa. Al iniciar, en la consola se le especificar al usuario las cosas que puede realizar, teniendo que ingresar un numero por consola asociado a la opción que se quiere usar.
+  * Luego seguir instrucciones de cada opción. NOTA: Fijarse bien en lo que se pide en cada opción y como es el formato adecuado dado que se debe respetar las mayusculas. En el caso de haber elegido "buscar un libro" luego la consola le pedira ingresar el nombre del parametro a buscar. Ej: Si quiere buscar por ISBN, debe escribir "ISBN" y ingresarlo. Para el caso de titulo escribir "titulo".
 
 * **Cómo contribuir**: 
-  * El programa realiza muchas impresiones por pantalla para que el usuario sepa que está haciendo, las cuales generalmente son parecidas a los logs
-    que se guardan, por lo que se podría realizar una mejor información en este último. 
-  * La forma de busqueda por indice puede no ser muy útil dado que puede no encontrar el texto que busca tan facilmente, por lo que quizás se podría idear otro metodo de busqueda.
-
+  * El programa utiliza Regex para fijarse en la correción del ingreso de parametros, quizas otra idea para fijarse mejor en los casos de uso de la clase de "libro" y "almacenamiento" sería el realizar la correción aquí.
+  
 * **Licencia**: None
